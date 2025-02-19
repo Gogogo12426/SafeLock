@@ -3,136 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SafeLock - Innowacyjne Systemy Zabezpieczeń</title>
-  <link rel="stylesheet" href="style.css">
+  <title>SafeLock - Bezpieczeństwo na pierwszym miejscu</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Zewnętrzny plik CSS -->
 </head>
 <body>
-  <!-- Górny biały pasek z logo i menu -->
+
+  <!-- Pasek nagłówka -->
   <header class="top-header">
     <div class="container">
-      <img src="images/logo.png" alt="SafeLock Logo" class="logo">
+      <div class="logo">
+        <img src="logo.png" alt="SafeLock Logo"> <!-- Zmień link do logo -->
+      </div>
       <nav>
         <ul>
-          <li><a href="#historia">Historia</a></li>
-          <li><a href="#uslugi">Usługi</a></li>
-          <li><a href="#cennik">Cennik</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#home">Strona Główna</a></li>
+          <li><a href="#history">Historia Firmy</a></li>
+          <li><a href="#services">Usługi</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
-  <!-- Sekcja Hero z tłem -->
-  <header id="hero">
-    <div class="overlay">
-      <div class="hero-content">
-        <h1>SafeLock</h1>
-        <p>Innowacyjne rozwiązania w zakresie systemów zabezpieczeń</p>
-        <!-- Obraz, który skalujemy responsywnie -->
-        <img src="images/innovative.png" alt="Innowacyjne rozwiązania" class="hero-image">
-      </div>
-    </div>
-  </header>
 
-  <!-- Główna treść strony -->
-  <main>
-    <!-- Historia firmy -->
-    <section id="historia" class="section">
-      <div class="container">
-        <h2>O nas</h2>
-        <p>SafeLock dostarcza najwyższej jakości rozwiązania zabezpieczające. Nasza firma opiera swoje działania na wieloletnim doświadczeniu, pasji oraz innowacyjnych technologiach. Dzięki indywidualnemu podejściu do każdego klienta, realizujemy nawet najbardziej wymagające projekty.</p>
-        <alt="Historia firmy">
-      </div>
-    </section>
+  <!-- Sekcja hero -->
+  <section class="hero" id="home">
+    <h1>Innowacyjne rozwiązania w zakresie systemów zabezpieczeń</h1>
+    <p>Chroń swoją przyszłość z SafeLock – projektowanie, montaż, serwis</p>
+  </section>
 
-    <!-- Usługi -->
-    <section id="uslugi" class="section">
-      <div class="container">
-        <h2>Nasze Usługi</h2>
-        <div class="services">
-          <div class="service">
-            <alt="Projektowanie systemów zabezpieczeń">
-            <h3>Projektowanie</h3>
-            <p>Indywidualne rozwiązania dopasowane do potrzeb klienta.</p>
-          </div>
-          <div class="service">
-            <alt="Montaż systemów zabezpieczeń">
-            <h3>Montaż</h3>
-            <p>Profesjonalny montaż systemów zabezpieczeń przez doświadczonych specjalistów.</p>
-          </div>
-          <div class="service">
-            <alt="Serwis systemów zabezpieczeń">
-            <h3>Serwis</h3>
-            <p>Kompleksowa obsługa serwisowa gwarantująca pełne bezpieczeństwo.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Sekcja historii firmy -->
+  <section class="history" id="history">
+    <h2>Historia Firmy</h2>
+    <p>SafeLock to firma, która od 10 lat dostarcza nowoczesne rozwiązania w zakresie systemów zabezpieczeń. Nasza misja to zapewnienie maksymalnego bezpieczeństwa w każdym budynku. Dzięki naszej pasji i doświadczeniu, staliśmy się liderem w tej branży.</p>
+  </section>
 
-    <!-- Cennik -->
-    <section id="cennik" class="section">
-      <div class="container">
-        <h2>Cennik</h2>
-        <div class="pricing">
-          <div class="price-box">
-            <h3>Podstawowy</h3>
-            <p class="price">XXXX PLN</p>
-            <ul>
-              <li>Projekt systemu</li>
-              <li>Montaż alarmu</li>
-              <li>Podstawowy serwis</li>
-            </ul>
-          </div>
-          <div class="price-box">
-            <h3>Zaawansowany</h3>
-            <p class="price">XXXX PLN</p>
-            <ul>
-              <li>Indywidualny projekt</li>
-              <li>Pełen montaż systemu</li>
-              <li>Rozbudowany serwis</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Sekcja usług -->
+  <section class="services" id="services">
+    <h2>Nasze Usługi</h2>
+    <p>Oferujemy kompleksowe usługi w zakresie projektowania, montażu i serwisowania systemów zabezpieczeń.</p>
+    <ul>
+      <li>Projektowanie systemów zabezpieczeń</li>
+      <li>Montaż alarmów, kamer, kontroli dostępu</li>
+      <li>Serwis i konserwacja</li>
+    </ul>
+  </section>
 
-    <!-- Kontakt -->
-    <section id="kontakt" class="section">
-      <div class="container">
-        <h2>Kontakt</h2>
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name" placeholder="Twoje imię" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Twój email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" placeholder="Twoja wiadomość" required></textarea>
-          </div>
-          <button type="submit">Wyślij</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  <!-- Formularz kontaktowy -->
+  <section class="contact-form" id="contact">
+    <h2>Skontaktuj się z nami</h2>
+    <form action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Twoje imię" required>
+      <input type="email" name="email" placeholder="Twój e-mail" required>
+      <textarea name="message" placeholder="Twoja wiadomość" required></textarea>
+      <button type="submit">Wyślij wiadomość</button>
+    </form>
+  </section>
 
-  <!-- Stopka -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 SafeLock. Wszelkie prawa zastrzeżone.</p>
-    </div>
-  </footer>
+  <!-- Sekcja obrazków -->
+  <section class="image-section">
+    <img src="image1.jpg" alt="Obrazek 1"> <!-- Zmień linki do zdjęć -->
+    <img src="image2.jpg" alt="Obrazek 2">
+    <img src="image3.jpg" alt="Obrazek 3">
+  </section>
 
-  <!-- Skrypt obsługujący formularz kontaktowy -->
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Dziękujemy za kontakt! Wkrótce się z Tobą skontaktujemy.');
-      this.reset();
-    });
-  </script>
 </body>
 </html>
