@@ -11,7 +11,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
-  padding-top: 80px;  /* Dodatkowa przestrzeń dla nagłówka */
+  padding-top: 60px;  /* Zmniejszamy przestrzeń dla nagłówka */
 }
 
 /* Pasek nagłówka (top-header) */
@@ -21,12 +21,13 @@ body {
   position: fixed;  /* Ustawiamy pasek jako stały */
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%;  /* Pasek zajmuje całą szerokość ekranu */
   z-index: 100;  /* Zapewnia, że pasek będzie nad innymi elementami */
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 100%; /* Upewniamy się, że pasek nie przekroczy szerokości ekranu */
 }
 
 /* Kontener wewnątrz nagłówka */
@@ -36,11 +37,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%; /* Zapewnia, że kontener rozciąga się na całą szerokość ekranu */
 }
 
 /* Logo w nagłówku */
 .top-header .logo img {
-  width: 120px;
+  width: 120px; /* Możesz dostosować szerokość logo */
 }
 
 /* Menu nawigacyjne w nagłówku */
